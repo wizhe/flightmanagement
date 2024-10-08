@@ -60,23 +60,19 @@ int getSelection() {
 
     cout<< "\n\nEnter your choice: (1, 2, 3, 4, 5, or 6)  ";
     
-    do {
-        cin.clear();
+    while (true) {
         cin >> input;
-        if (input < 1 || input > 6) {
+
+        // Check if input is valid
+        if (cin.fail() || input < 1 || input > 6) {
+            cin.clear(); // clear the error flag
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // discard invalid input
             cout << "\nInvalid input, please try again.\n";
-            cout<< "\nPlease select one of the following options:\n"
-            << "1. Display Flight Sea Map\n"
-            << "2. Display Passengers Information\n"
-            << "3. Add a New Passenger\n"
-            << "4. Remove an Existing Passenger\n"
-            << "5. Save Data\n"
-            << "6. Quit\n";
+        } else {
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // discard any remaining input
+            break; // valid input; exit loop
         }
-
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-    } while (input < 1 || input > 6);
+    }
 
     return input;
 }
@@ -153,47 +149,36 @@ void displayPassInfo(Flight& flight) {
         cout<< "\n------------------------------------------------------------------------------------\n";
         allPass[i].print_info();
     }
-
+    
+    return;
 }
 
 
 bool menu(Flight& currentFlight) {
     int selection = getSelection();
+    
     if (selection == 1) {
         showSeatMap(currentFlight.getSeating());
         returnToContinue();
-        return true;
-    }
-
-    else if (selection == 2) {
+    } else if (selection == 2) {
         displayPassInfo(currentFlight);
         returnToContinue();
-        return true;
-    }
-
-    else if (selection == 3) {
+    } else if (selection == 3) {
         currentFlight.menuCreatePass();
-        return true;
-    }
-
-    else if (selection == 4) {
+    } else if (selection == 4) {
         currentFlight.menuDeletePass();
-        return true;
-    }
-
-    else if (selection == 5) {
+    } else if (selection == 5) {
         currentFlight.saveData();
-        return true;
-    }
-
-    else if (selection == 6) {
+    } else if (selection == 6) {
         cout << "\nProgram Terminating...";
         cout << "\nGoodbye!\n\n";
+        exit(0);
         return false;
     }
 
-    return false;
+    return true;
 }
+
 
 
 
