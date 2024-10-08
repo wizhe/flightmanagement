@@ -2,7 +2,8 @@
 ## Overview
 The Flight Management System is a terminal-based program designed to manage seating arrangements and passenger information for a flight. 
 ## How to Run
-1. Compile the program using the command `g++ -Wall -o main airline.cpp flight.cpp main.cpp seat.cpp passenger.cpp` in an integrated terminal within the program directory.
+1. In an integrated terminal within the program directory, compile the program using the command  
+   `g++ -Wall -o main airline.cpp flight.cpp main.cpp seat.cpp passenger.cpp`
 2. Execute the generated executable file `main.exe`.
 3. Use the program!
 ## Key Features
