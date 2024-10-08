@@ -43,8 +43,8 @@ string formatReading(const string& line) {
 
 
 void display_header() {
-    cout<< "Flight Management Program in C++\n"
-        << "\nVersion: 1.0\n";
+    cout<< "\nFlight Management System\n"
+        << "Version: 1.0\n";
 }
 
 
@@ -214,7 +214,6 @@ int main() {
     // cout<< "AIRLINE CHECK" << thisairline.getFlights()->at(0).getID()<<endl; //airline check
 
     display_header();
-    returnToContinue();
 
     while(menu(thisflight)) {}
 
