@@ -1,10 +1,7 @@
 // flight.cpp
 
-
 #include "flight.h"
 #include "main.h"
-
-
 
 
 Flight::Flight() : 

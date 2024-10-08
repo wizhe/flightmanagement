@@ -10,8 +10,6 @@
 #include "airline.h"
 
 
-
-
 string formatReading(const string& line) {
     string result = line;
 
@@ -178,9 +176,6 @@ bool menu(Flight& currentFlight) {
 
     return true;
 }
-
-
-
 
 
 int main() {

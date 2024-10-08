@@ -1,9 +1,6 @@
 // airline.cpp
 
-
 #include "airline.h"
-
-
 
 
 Airline::Airline() : 
@@ -49,10 +46,8 @@ void Airline::setFlight(vector<Flight>* val) {
 }
 
 
-
 void Airline::addFlight(Flight val) {
     flights->push_back(val);
     ++numOfFlights;
 }
-
 

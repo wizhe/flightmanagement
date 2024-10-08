@@ -1,9 +1,6 @@
 // seat.cpp
 
-
 #include "seat.h"
-
-
 
 
 Seat::Seat() :

@@ -1,12 +1,7 @@
 // seat.h
 
-
-#ifndef IOSTREAM_L
-#define IOSTREAM_L
 #include <iostream>
 using namespace std;
-#endif
-
 
 
 #ifndef SEAT_H

@@ -1,45 +1,16 @@
 // flight.h
 
-
 #include "passenger.h"
-
-#ifndef STRING_L
-#define STRING_L
 #include <string>
-using namespace std;
-#endif
-
-#ifndef VECTOR_L
-#define VECTOR_L
 #include <vector>
-using namespace std;
-#endif
-
-#ifndef LIMITS_L
-#define LIMITS_L
 #include <limits>
-using namespace std;
-#endif
-
-#ifndef FSTREAM_L
-#define FSTREAM_L
 #include <fstream>
-using namespace std;
-#endif
-
-#ifndef IOSTREAM_L
-#define IOSTREAM_L
 #include <iostream>
 using namespace std;
-#endif
-
 
 
 #ifndef FLIGHT_H
 #define FLIGHT_H
-
-
-
 
 class Flight {
     private:

@@ -1,32 +1,14 @@
 // airline.h
 
-
 #include "flight.h"
-
-#ifndef STRING_L
-#define STRING_L
 #include <string>
-using namespace std;
-#endif
-
-#ifndef VECTOR_L
-#define VECTOR_L
 #include <vector>
-using namespace std;
-#endif
-
-#ifndef ALGORITHM_L
-#define ALGORITHM_L
 #include <algorithm>
 using namespace std;
-#endif
-
 
 
 #ifndef AIRLINE_H
 #define AIRLINE_H
-
-
 
 class Airline {
     private:

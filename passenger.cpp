@@ -1,9 +1,6 @@
 // passenger.cpp
 
-
 #include "passenger.h"
-
-
 
 
 Passenger::Passenger() : 
