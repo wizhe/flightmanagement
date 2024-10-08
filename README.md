@@ -1,4 +1,4 @@
-# Flight Management System
+# Flight Management System :airplane:
 ## Overview
 The Flight Management System is a terminal-based program designed to manage seating arrangements and passenger information for a flight. 
 ## How to Run
